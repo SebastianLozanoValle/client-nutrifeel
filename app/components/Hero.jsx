@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 import { motion } from 'framer-motion';
 import {TbTriangleFilled} from "react-icons/tb";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
@@ -26,9 +27,10 @@ const bounceAnimation2 = {
 };
 
 const heroAnimation = {
-    hidden: { y: "-100vh" }, // Inicia fuera de la pantalla en la parte superior
+    hidden: { opacity: 0, y: -100 }, // Inicia más arriba fuera de la pantalla
     visible: {
-        y: 0, // Se mueve a su posición original
+        opacity: 1,
+        y: 0,
         transition: {
             duration: 1, // Duración de la animación
             ease: "easeInOut", // Efecto de rebote
@@ -68,9 +70,9 @@ export default function Hero() {
                 </motion.div>
             </div>
             <motion.div
-                /*variants={heroAnimation}
+                variants={heroAnimation}
                 initial="hidden"
-                animate="visible"*/
+                animate="visible"
                 className='pt-[64px] h-screen w-screen flex'>
                 <div className='p-20 w-2/3 h-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex'>
                     <div className='w-1/2 p-4 h-full flex flex-col justify-between'>

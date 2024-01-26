@@ -1,0 +1,1 @@
+export const SubTitle = ({ children }) => <h2 className='text-5xl font-semibold text-[#3ac968]'>{children}</h2>

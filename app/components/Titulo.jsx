@@ -1,0 +1,1 @@
+export const Titulo = ({ children }) => <h2 className='py-5 text-3xl font-semibold text-[#3ac968]'>{children}</h2>

@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {TbTriangleFilled} from "react-icons/tb";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import {SubTitle} from "@/app/components/SubTitle";
 
 // Define las variantes de animación
 const bounceAnimation = {
@@ -42,7 +43,7 @@ const heroAnimation = {
 export default function Hero() {
     return (
         <>
-            <div className='overflow-x-hidden -z-10'
+            <div className='h-auto overflow-x-hidden -z-10'
                  style={{position: 'absolute', width: '100%', height: '100%'}}> {/* Contenedor con posición absoluta */}
                 {/* Triángulo equilátero 1 con esquinas redondeadas */}
                 <motion.div
@@ -73,10 +74,10 @@ export default function Hero() {
                 variants={heroAnimation}
                 initial="hidden"
                 animate="visible"
-                className='pt-[64px] h-screen w-screen flex'>
-                <div className='p-20 w-2/3 h-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex'>
-                    <div className='w-1/2 p-4 h-full flex flex-col justify-between'>
-                        <h2 className='text-5xl font-semibold text-[#3ac968] underline'>Lorem ipsum dolor</h2>
+                className='pt-[64px] h-screen w-screen relative flex mb-[20vh]'>
+                <div className='p-2 w-full sm:w-3/4 sm:h-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
+                    <div className='w-full sm:w-1/2 p-4 h-full flex flex-col justify-between flex-1'>
+                        <SubTitle>Lorem ipsum dolor</SubTitle>
                         <p className='p-4 text-2xl'>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet
                         </p>
@@ -92,7 +93,7 @@ export default function Hero() {
                             <a href="#"><FaInstagram size='50' color="#e97613"/></a>
                         </div>
                     </div>
-                    <div className='w-1/2 h-full flex p-4'>
+                    <div className='w-full sm:w-1/2 h-full flex p-4 flex-1'>
                         <iframe
                             className='rounded-xl shadow-xl my-auto p-4'
                             width="100%" height="75%"

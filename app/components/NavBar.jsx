@@ -14,7 +14,7 @@ const Navbar = () => {
   }, []);
 
   return (
-      <nav className="fixed w-full z-10 bg-white ">
+      <nav className="fixed w-full z-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-16">
             <div className="flex items-center justify-between w-full md:w-auto">
@@ -30,7 +30,7 @@ const Navbar = () => {
               <div className="hidden md:flex items-center">
                 <ul className="flex justify-around">
                   <NavBarLink className="mx-8 my-auto">Inicio</NavBarLink>
-                  <NavBarLink className="mx-8 my-auto">Sobre Nosotros</NavBarLink>
+                  <NavBarLink className="mx-8 my-auto">Nosotros</NavBarLink>
                   <NavBarLink className="mx-8 my-auto">Contacto</NavBarLink>
                 </ul>
                 <div className="flex justify-around">

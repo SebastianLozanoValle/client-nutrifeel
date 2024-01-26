@@ -10,7 +10,7 @@ export const BodyTemporal = () => {
     const carousel = useRef()
 
     useEffect(() => {
-        setWidth(carousel.current.scrollWidth - (carousel.current.offsetWidth/4));
+        setWidth(carousel.current.scrollWidth - (carousel.current.offsetWidth/1.5));
     }, []);
 
     return (

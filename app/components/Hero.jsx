@@ -9,9 +9,9 @@ import {SubTitle} from "@/app/components/SubTitle";
 const bounceAnimation = {
     hidden: { x: "40vw" }, // Inicia más arriba fuera de la pantalla
     visible: {
-        y: ["calc(-101vh - 1200px)", "calc(95vh - 1200px)", "calc(90vh - 1200px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
+        y: ["calc(-101vh - 1600px)", "calc(95vh - 1600px)", "calc(90vh - 1600px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
         transition: {
-            duration: 1, // Duración de la animación
+            duration: 4, // Duración de la animación
             ease: "easeInOut", // Efecto de rebote
         }
     }
@@ -19,9 +19,9 @@ const bounceAnimation = {
 const bounceAnimation2 = {
     hidden: { x: "50vw" }, // Inicia más arriba fuera de la pantalla
     visible: {
-        y: ["calc(-101vh - 2700px)", "calc(85vh - 2700px)", "calc(80vh - 2700px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
+        y: ["calc(-101vh - 2800px)", "calc(85vh - 2800px)", "calc(80vh - 2800px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
         transition: {
-            duration: 1, // Duración de la animación
+            duration: 5, // Duración de la animación
             ease: "easeInOut", // Efecto de rebote
         }
     }
@@ -74,9 +74,9 @@ export default function Hero() {
                 variants={heroAnimation}
                 initial="hidden"
                 animate="visible"
-                className='pt-[64px] h-screen w-screen relative flex mb-[20vh]'>
-                <div className='p-2 w-full sm:w-3/4 sm:h-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
-                    <div className='w-full sm:w-1/2 p-4 h-full flex flex-col justify-between flex-1'>
+                className='pt-[64px] sm:h-screen w-screen relative flex mb-20'>
+                <div className='p-2 w-full sm:w-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
+                    <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col flex-1 gap-4 text-center'>
                         <SubTitle>Lorem ipsum dolor</SubTitle>
                         <p className='p-4 text-2xl'>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet
@@ -93,7 +93,7 @@ export default function Hero() {
                             <a href="#"><FaInstagram size='50' color="#e97613"/></a>
                         </div>
                     </div>
-                    <div className='w-full sm:w-1/2 h-full flex p-4 flex-1'>
+                    <div className='w-full sm:w-1/2 h-[400px] md:h-[600px] my-auto flex p-4 flex-1'>
                         <iframe
                             className='rounded-xl shadow-xl my-auto p-4'
                             width="100%" height="75%"

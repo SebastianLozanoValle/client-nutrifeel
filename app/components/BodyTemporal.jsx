@@ -4,6 +4,7 @@ import {  motion } from 'framer-motion';
 import { GenereicNosotros } from "@/app/components/GenereicNosotros";
 import { SubTitle } from "@/app/components/SubTitle";
 import { IoIosMail } from "react-icons/io";
+import {Titulo} from "@/app/components/Titulo";
 
 export const BodyTemporal = () => {
 
@@ -45,9 +46,9 @@ export const BodyTemporal = () => {
             <div className='my-20 bg-gray-200 shadow-2xl'>
                 <div className='py-20 px-4 md:px-40 flex flex-wrap justify-around'>
                     <div className='text-center w-full flex flex-col gap-20 md:w-1/2 p-8'>
-                        <SubTitle>
+                        <Titulo>
                             Tu plan personalizado te espera
-                        </SubTitle>
+                        </Titulo>
                         <p className='md:px-16 font-extralight'>
                             Dejanos Tu Informacion para mantenerte al dia con las ultimas novedades de NutriFeel
                         </p>
@@ -71,7 +72,7 @@ export const BodyTemporal = () => {
                         </div>
                     </div>
                     <div className='text-center w-full flex flex-col gap-20 md:w-1/2 p-8'>
-                        <SubTitle>¿Como Empezar con mi plan personalizado?</SubTitle>
+                        <Titulo>¿Como Empezar con mi plan personalizado?</Titulo>
                         <div className='flex flex-wrap md:justify-between gap-8 md:gap-0'>
                             <div className='flex flex-col gap-6 mx-auto'>
                                 <p className='font-bold text-[#e97613] text-5xl'>1</p>

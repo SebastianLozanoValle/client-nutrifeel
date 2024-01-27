@@ -24,22 +24,27 @@ export const BodyTemporal = () => {
                     className='text-[#e97613]'>{'/>'}</span></SubTitle>
                 <p className='font-thin'>Nutrición Online Al Alcance De Todos</p>
             </div>
-            <motion.div ref={carousel} className='overflow-x-hidden flex gap-4 w-screen py-20' style={{ minWidth: 'max-content' }}>
+            <motion.div ref={carousel} className='overflow-x-hidden flex gap-4 w-screen py-20'
+                        style={{minWidth: 'max-content'}}>
                 <motion.div drag='x' dragConstraints={{right: 40, left: -width}} className='flex gap-4'>
                     <GenereicNosotros title='primero'>
-                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida a través de
+                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
+                        a través de
                         la nutrición.
                     </GenereicNosotros>
                     <GenereicNosotros title='segundo'>
-                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida a través de
+                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
+                        a través de
                         la nutrición.
                     </GenereicNosotros>
                     <GenereicNosotros title='tercero'>
-                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida a través de
+                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
+                        a través de
                         la nutrición.
                     </GenereicNosotros>
                     <GenereicNosotros title='cuarto'>
-                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida a través de
+                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
+                        a través de
                         la nutrición.
                     </GenereicNosotros>
                 </motion.div>
@@ -70,7 +75,9 @@ export const BodyTemporal = () => {
                                                    href="/terminos">Terminos y Condiciones</a>
                                 </div>
 
-                                <button className='w-full bg-[#3ac968] py-2 rounded-full text-white' type="submit">Continuar</button>
+                                <button className='w-full bg-[#3ac968] py-2 rounded-full text-white'
+                                        type="submit">Continuar
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -96,29 +103,63 @@ export const BodyTemporal = () => {
                         <div className='flex justify-center gap-8'>
                             <a className='px-8 py-2 rounded-3xl text-white bg-[#3ac968] shadow-2xl' href="#tarifas">Mas
                                 información</a>
-                            <a className='px-8 py-2 rounded-3xl text-white bg-[#e97613] shadow-2xl' href='/login'>Empezar ahora</a>
+                            <a className='px-8 py-2 rounded-3xl text-white bg-[#e97613] shadow-2xl' href='/login'>Empezar
+                                ahora</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className='flex flex-wrap py-4'>
-                <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 ls:pl-24 flex flex-col gap-4'>
+                <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 lg:pl-24 flex flex-col gap-4'>
                     <span className='text-[#e97613]'>Nuestros servicios</span>
                     <SubTitle>Lorem Ipsum Dolor</SubTitle>
                     <p className='text-balance leading-7 md:leading-10'>
-                        Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons is rsus mal suada and fadolorit to the consectetur elit. All the Lorem Ipsum at generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of the over 200 Latin words, combined with a handful of model sentence more as structures, to generate Lorem Ipsum which looks reasonable.
+                        Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion consectetur elit. Vesti at bulum
+                        nec odio aea the dumm ipsumm ipsum that dolocons is rsus mal suada and fadolorit to the
+                        consectetur elit. All the Lorem Ipsum at generators on the Internet tend to repeat predefined
+                        chunks as necessary, making this the first true generator on the Internet. It uses a dictionary
+                        of the over 200 Latin words, combined with a handful of model sentence more as structures, to
+                        generate Lorem Ipsum which looks reasonable.
                     </p>
                     <div>
-                        <button className='rounded border-2 border-[#e97613] text-[#e97613] py-2 px-4 flex items-center gap-4 font-semibold'>
-                            Conoce más<FaLongArrowAltRight />
+                        <button
+                            className='rounded border-2 border-[#e97613] text-[#e97613] py-2 px-4 flex items-center gap-4 font-semibold'>
+                            Conoce más<FaLongArrowAltRight/>
                         </button>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/2 pr-24 flex flex-col gap-4'>
+                <div className='w-full lg:w-1/2 pr-20 flex flex-col gap-4'>
                     <div className='relative w-full h-full rounded-3xl overflow-hidden'>
-                        <Image src='/frutas.png' alt={'conjunto de frutas'} fill />
+                        <Image src='/frutas.png' alt={'conjunto de frutas'} fill/>
                     </div>
+                </div>
+            </div>
+
+            <div className='flex flex-wrap py-4'>
+                <div className='w-full lg:w-1/2 pl-20 flex flex-col gap-4'>
+                    <div className='relative w-full h-full rounded-3xl overflow-hidden'>
+                        <Image src='/frutas.png' alt={'conjunto de frutas'} fill/>
+                    </div>
+                </div>
+                <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 lg:pr-24 flex flex-col gap-4'>
+                    <span className='text-[#e97613]'>Nuestros servicios</span>
+                    <SubTitle>Lorem Ipsum Dolor</SubTitle>
+                    <p className='text-balance leading-7 md:leading-10'>
+                        Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion consectetur elit. Vesti at bulum
+                        nec odio aea the dumm ipsumm ipsum that dolocons is rsus mal suada and fadolorit to the
+                        consectetur elit.
+                    </p>
+                    <ul className='list-disc ml-8'>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                    </ul>
                 </div>
             </div>
         </div>

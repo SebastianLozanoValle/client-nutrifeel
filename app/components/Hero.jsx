@@ -76,7 +76,7 @@ export default function Hero() {
                 animate="visible"
                 className='pt-[64px] sm:h-screen w-screen relative flex mb-20'>
                 <div className='p-2 w-full sm:w-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
-                    <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col flex-1 gap-4 text-center'>
+                    <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col gap-4 text-center'>
                         <SubTitle>Lorem ipsum dolor</SubTitle>
                         <p className='p-4 text-2xl'>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet
@@ -93,7 +93,7 @@ export default function Hero() {
                             <a href="#"><FaInstagram size='50' color="#e97613"/></a>
                         </div>
                     </div>
-                    <div className='w-full sm:w-1/2 h-[400px] md:h-[600px] my-auto flex p-4 flex-1'>
+                    <div className='w-full sm:w-1/2 h-[400px] md:h-[600px] my-auto flex p-4'>
                         <iframe
                             className='rounded-xl shadow-xl my-auto p-4'
                             width="100%" height="75%"

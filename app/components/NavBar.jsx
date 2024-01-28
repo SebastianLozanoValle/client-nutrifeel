@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Image
                     src="/logo.png"
                     alt="Logo"
-                    width={50}
+                    width={80}
                     height={0}
                 />
                 <h1 className="text-[#3ac968] text-3xl my-auto">NutriFeel</h1>
@@ -35,10 +35,10 @@ const Navbar = () => {
                 </ul>
                 <div className="flex justify-around">
                   <a href="#"
-                     className="shadow-lg border border-[#3ac968] text-[#3ac968] rounded-md mx-4 px-4 py-1 my-auto">Iniciar
+                     className="shadow-lg border border-[#3ac968] text-[#3ac968] rounded-md mx-4 px-4 py-1 my-auto hover:text-white hover:bg-primario transition-all hover:-translate-x-1">Iniciar
                     Sesión</a>
                   <a href="#"
-                     className="shadow-lg bg-[#3ac968] text-white rounded-md mx-4 px-4 py-1 my-auto">Registrarse</a>
+                     className="shadow-lg border border-[#3ac968] bg-[#3ac968] text-white rounded-md mx-4 px-4 py-1 my-auto hover:text-primario hover:bg-inherit transition-all hover:-translate-x-1">Registrarse</a>
                 </div>
               </div>
             </div>

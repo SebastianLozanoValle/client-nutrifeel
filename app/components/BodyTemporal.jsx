@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import {  motion } from 'framer-motion';
 import { GenereicNosotros } from "@/app/components/GenereicNosotros";
 import { SubTitle } from "@/app/components/SubTitle";
@@ -7,6 +7,7 @@ import { IoIosMail } from "react-icons/io";
 import {Titulo} from "@/app/components/Titulo";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Image from "next/image";
+import {buttonVariants} from "@/app/animations/animations";
 
 export const BodyTemporal = () => {
 
@@ -51,7 +52,7 @@ export const BodyTemporal = () => {
             </motion.div>
 
 
-            <div className='my-20 bg-gray-200 shadow-2xl'>
+            <div className='my-20 bg-gray-700 shadow-2xl text-white'>
                 <div className='py-20 px-4 md:px-40 flex flex-wrap justify-around'>
                     <div className='text-center w-full flex flex-col gap-20 md:w-1/2 p-8'>
                         <Titulo>
@@ -60,7 +61,7 @@ export const BodyTemporal = () => {
                         <p className='md:px-16 font-extralight'>
                             Dejanos Tu Informacion para mantenerte al dia con las ultimas novedades de NutriFeel
                         </p>
-                        <div className='flex flex-col px-4 md:px-16 py-10 rounded-xl bg-white mx-auto'>
+                        <div className='flex flex-col px-4 md:px-16 py-10 rounded-xl bg-white mx-auto text-black'>
                             <IoIosMail className='mx-auto' size={100} color='#3ac968'/>
                             <form action="">
                                 <div className='relative'>
@@ -75,7 +76,7 @@ export const BodyTemporal = () => {
                                                    href="/terminos">Terminos y Condiciones</a>
                                 </div>
 
-                                <button className='w-full bg-[#3ac968] py-2 rounded-full text-white'
+                                <button className='border border-primario w-full bg-[#3ac968] py-2 rounded-full text-white hover:bg-inherit hover:text-primario transition-all hover:-translate-x-1 hover:translate-y-1 hover:shadow-3xl'
                                         type="submit">Continuar
                                 </button>
                             </form>
@@ -101,10 +102,22 @@ export const BodyTemporal = () => {
                             </div>
                         </div>
                         <div className='flex justify-center gap-8'>
-                            <a className='px-8 py-2 rounded-3xl text-white bg-[#3ac968] shadow-2xl' href="#tarifas">Mas
-                                información</a>
-                            <a className='px-8 py-2 rounded-3xl text-white bg-[#e97613] shadow-2xl' href='/login'>Empezar
-                                ahora</a>
+                            <motion.a
+                                href="#"
+                                className="px-8 py-2 rounded-3xl text-white bg-primario shadow-3xl border border-primario hover:bg-inherit"
+                                whileHover="hover"
+                                variants={buttonVariants}
+                            >
+                                Mas información
+                            </motion.a>
+                            <motion.a
+                                href="#"
+                                className="px-8 py-2 rounded-3xl text-white bg-secundario shadow-3xl border border-secundario hover:bg-inherit"
+                                whileHover="hover"
+                                variants={buttonVariants}
+                            >
+                                Empezar ahora
+                            </motion.a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +137,7 @@ export const BodyTemporal = () => {
                     </p>
                     <div>
                         <button
-                            className='rounded border-2 border-[#e97613] text-[#e97613] py-2 px-4 flex items-center gap-4 font-semibold'>
+                            className='rounded border-2 border-[#e97613] text-[#e97613] py-2 px-4 flex items-center gap-4 font-semibold hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transition-all'>
                             Conoce más<FaLongArrowAltRight/>
                         </button>
                     </div>
@@ -139,7 +152,7 @@ export const BodyTemporal = () => {
             <div className='flex flex-wrap py-4'>
                 <div className='w-full lg:w-1/2 pl-20 flex flex-col gap-4'>
                     <div className='relative w-full h-full rounded-3xl overflow-hidden'>
-                        <Image src='/frutas.png' alt={'conjunto de frutas'} fill/>
+                        <Image src='/mas_frutas.png' alt={'conjunto de frutas'} fill/>
                     </div>
                 </div>
                 <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 lg:pr-24 flex flex-col gap-4'>

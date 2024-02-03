@@ -11,5 +11,6 @@ export default function Home() {
           <Hero/>
           <BodyTemporal/>
       </main>
+      
   );
 }

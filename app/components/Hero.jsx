@@ -4,40 +4,15 @@ import { motion } from 'framer-motion';
 import {TbTriangleFilled} from "react-icons/tb";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import {SubTitle} from "@/app/components/SubTitle";
+import {
+    bounceAnimation,
+    bounceAnimation2,
+    buttonVariants,
+    heroAnimation,
+    logoVariants
+} from "@/app/animations/animations";
 
-// Define las variantes de animación
-const bounceAnimation = {
-    hidden: { x: "40vw" }, // Inicia más arriba fuera de la pantalla
-    visible: {
-        y: ["calc(-101vh - 1600px)", "calc(95vh - 1600px)", "calc(90vh - 1600px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
-        transition: {
-            duration: 4, // Duración de la animación
-            ease: "easeInOut", // Efecto de rebote
-        }
-    }
-};
-const bounceAnimation2 = {
-    hidden: { x: "50vw" }, // Inicia más arriba fuera de la pantalla
-    visible: {
-        y: ["calc(-101vh - 2800px)", "calc(85vh - 2800px)", "calc(80vh - 2800px)"], // Baja al 50vh, sube un 5vh y luego baja un 5vh
-        transition: {
-            duration: 5, // Duración de la animación
-            ease: "easeInOut", // Efecto de rebote
-        }
-    }
-};
 
-const heroAnimation = {
-    hidden: { opacity: 0, y: -100 }, // Inicia más arriba fuera de la pantalla
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 1, // Duración de la animación
-            ease: "easeInOut", // Efecto de rebote
-        }
-    }
-};
 
 
 export default function Hero() {
@@ -76,24 +51,39 @@ export default function Hero() {
                 animate="visible"
                 className='pt-[64px] sm:h-screen w-screen relative flex mb-20'>
                 <div className='p-2 w-full sm:w-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
-                    <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col flex-1 gap-4 text-center'>
+                    <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col gap-4 text-center'>
                         <SubTitle>Lorem ipsum dolor</SubTitle>
                         <p className='p-4 text-2xl'>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet
                         </p>
                         <div className='p-4 w-full flex justify-center'>
-                            <a href="#"
-                               className="shadow-lg border border-[#3ac968] text-[#3ac968] rounded-md mx-4 px-4 py-1 my-auto">Iniciar
-                                Sesión</a>
-                            <a href="#"
-                               className="shadow-lg bg-[#3ac968] text-white rounded-md mx-4 px-4 py-1 my-auto">Registrarse</a>
+                            <motion.a
+                                href="#"
+                                className="shadow-lg border border-[#3ac968] text-[#3ac968] rounded-md mx-4 px-4 py-1 my-auto hover:text-white hover:bg-primario transition-all hover:-translate-x-1"
+                                whileHover="hover"
+                                variants={buttonVariants}
+                            >
+                                Iniciar Sesión
+                            </motion.a>
+                            <motion.a
+                                href="#"
+                                className="shadow-lg border border-[#3ac968] bg-[#3ac968] text-white rounded-md mx-4 px-4 py-1 my-auto hover:text-primario hover:bg-inherit transition-all hover:-translate-x-1"
+                                whileHover="hover"
+                                variants={buttonVariants}
+                            >
+                                Registrarse
+                            </motion.a>
                         </div>
                         <div className='flex gap-4 p-4 justify-center'>
-                            <a href="#"><FaFacebook size='50' color="#e97613"/></a>
-                            <a href="#"><FaInstagram size='50' color="#e97613"/></a>
+                            <motion.div whileHover="hover" variants={logoVariants}>
+                                <a href="#"><FaFacebook size='50' color="#e97613"/></a>
+                            </motion.div>
+                            <motion.div whileHover="hover" variants={logoVariants}>
+                                <a href="#"><FaInstagram size='50' color="#e97613"/></a>
+                            </motion.div>
                         </div>
                     </div>
-                    <div className='w-full sm:w-1/2 h-[400px] md:h-[600px] my-auto flex p-4 flex-1'>
+                    <div className='w-full sm:w-1/2 h-[400px] md:h-[600px] my-auto flex p-4'>
                         <iframe
                             className='rounded-xl shadow-xl my-auto p-4'
                             width="100%" height="75%"

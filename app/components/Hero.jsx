@@ -52,9 +52,9 @@ export default function Hero() {
                 className='pt-[64px] sm:h-screen w-screen relative flex mb-20'>
                 <div className='p-2 w-full sm:w-3/4 backdrop-filter backdrop-blur-md bg-white bg-opacity-20 m-auto rounded-3xl flex flex-wrap'>
                     <div className='w-full sm:w-1/2 my-auto p-4 h-full flex flex-col gap-4 text-center'>
-                        <SubTitle>Lorem ipsum dolor</SubTitle>
+                        <SubTitle>Optimiza tu nutrición</SubTitle>
                         <p className='p-4 text-2xl'>
-                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet
+                            Con NutriFeel y nuestros especialistas en nutrición, descubre cómo mejorar tu dieta para potenciar tu salud y bienestar.
                         </p>
                         <div className='p-4 w-full flex justify-center'>
                             <motion.a

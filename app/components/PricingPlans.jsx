@@ -16,16 +16,26 @@ export const PricingPlans = () => {
     const closeModal = () => setShowModal(false); // Función para cerrar el modal
 
     return (
-        <div className="flex flex-wrap justify-around items-start p-4 pb-40">
-            <PricingPlan plan={{ name: 'Plan 1', price: '$10', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 0 }} openModal={openModal} />
-            <PricingPlan plan={{ name: 'Plan 2', price: '$20', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 1 }} openModal={openModal} />
-            <PricingPlan plan={{ name: 'Plan 3', price: '$30', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 2 }} openModal={openModal} />
+        <>
+            <div className='text-white' id='Precios'>
+                .
+            </div>
 
-            {/* Renderizar el modal si showModal es true */}
-            {showModal && (
-                <Modal closeModal={closeModal} />
-            )}
-        </div>
+            <div className='flex flex-wrap py-4 pt-[20vh]'>
+                <h1 className='text-4xl font-bold text-center w-full text-secundario'>Precios</h1>
+            </div>
+
+            <div className="flex flex-wrap justify-around items-start p-4 pb-40">
+                <PricingPlan plan={{ name: 'Plan 1', price: '$10', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 0 }} openModal={openModal} />
+                <PricingPlan plan={{ name: 'Plan 2', price: '$20', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 1 }} openModal={openModal} />
+                <PricingPlan plan={{ name: 'Plan 3', price: '$30', features: ['Feature 1', 'Feature 2', 'Feature 3'], index: 2 }} openModal={openModal} />
+
+                {/* Renderizar el modal si showModal es true */}
+                {showModal && (
+                    <Modal closeModal={closeModal} />
+                )}
+            </div>
+        </>
     );
 };
 

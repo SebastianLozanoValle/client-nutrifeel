@@ -8,7 +8,7 @@ export const GenereicNosotros = ({ title, children, icono }) => {
             className='text-center flex flex-col items-center mx-auto w-[85vw] sm:w-[600px] p-10 bg-gray-50 rounded-3xl shadow-2xl'>
             {icono}
             <Titulo>{title}</Titulo>
-            <p className=' font-semibold text-balance'>
+            <p className=' font-semibold text-justify'>
                 {children}
             </p>
         </motion.div>

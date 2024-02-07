@@ -22,6 +22,9 @@ export default function Home() {
             <h3 className='text-secundario text-2xl'> Pruebalo y empieza a  medir tus resultados.</h3>
           </div>
           <Imc />
+          <div className='text-white' id='Nosotros'>
+            .
+          </div>
           <BodyTemporal/>
           <PricingPlans />
           <Footer/>

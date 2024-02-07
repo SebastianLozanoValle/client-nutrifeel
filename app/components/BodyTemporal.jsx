@@ -10,6 +10,8 @@ import Image from "next/image";
 import { buttonVariants } from "@/app/animations/animations";
 import { PiScrollFill } from "react-icons/pi";
 import { IoTelescope } from "react-icons/io5";
+import { FaRankingStar } from "react-icons/fa6";
+import { FaEdit } from "react-icons/fa";
 
 export const BodyTemporal = () => {
 
@@ -21,7 +23,7 @@ export const BodyTemporal = () => {
     }, []);
 
     return (
-        <div className='my-[20vh] overflow-x-hidden' id='Nosotros'>
+        <div className='my-[20vh] overflow-x-hidden'>
             <div className='justify-center text-center'>
                 <SubTitle><span className='text-[#e97613]'>{'<'}</span>Nutrifeel<span
                     className='text-[#e97613]'>{'/>'}</span></SubTitle>
@@ -36,10 +38,8 @@ export const BodyTemporal = () => {
                     <GenereicNosotros title='Visión' icono={<IoTelescope size={75} color='#e97613' />}>
                         Para el año 2028, nuestra visión es transformar la salud y el bienestar de las personas en toda América Latina a través de la tecnología. Estamos comprometidos con la creación de una comunidad conectada y global que tenga acceso a expertos en salud de clase mundial y recursos de bienestar personalizados. Nos esforzamos por brindar una plataforma tecnológica que permita a las personas mejorar su salud física y mental, aumentar su felicidad y calidad de vida, y reducir los costos de atención médica. Al aprovechar la tecnología de vanguardia y la innovación, estamos creando un futuro en el que la salud y el bienestar sean accesibles y asequibles para todos en América Latina
                     </GenereicNosotros>
-                    <GenereicNosotros title='tercero' icono={<PiScrollFill size={75} color='#e97613' />}>
-                        NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
-                        a través de
-                        la nutrición.
+                    <GenereicNosotros title='Personalización sin límites' icono={<FaEdit size={75} color='#e97613' />}>
+                        ¿Qué funciona para ti? Nuestra aplicación te permite personalizar tus metas y preferencias de manera única. Ya sea que estés buscando perder peso, ganar masa muscular o simplemente mejorar tu salud general, adaptamos nuestras funciones para adaptarse a tus objetivos específicos.
                     </GenereicNosotros>
                     <GenereicNosotros title='cuarto' icono={<PiScrollFill size={75} color='#e97613' />}>
                         NutriFeel es una plataforma que busca ayudar a las personas a mejorar su salud y calidad de vida
@@ -124,14 +124,9 @@ export const BodyTemporal = () => {
             <div className='flex flex-wrap py-4'>
                 <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 lg:pl-24 flex flex-col gap-4'>
                     <span className='text-[#e97613]'>Nuestros servicios</span>
-                    <SubTitle>Lorem Ipsum Dolor</SubTitle>
+                    <SubTitle>Mejora tus hábitos y salud alimenticia con nosotros</SubTitle>
                     <p className='text-balance leading-7 md:leading-10'>
-                        Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion consectetur elit. Vesti at bulum
-                        nec odio aea the dumm ipsumm ipsum that dolocons is rsus mal suada and fadolorit to the
-                        consectetur elit. All the Lorem Ipsum at generators on the Internet tend to repeat predefined
-                        chunks as necessary, making this the first true generator on the Internet. It uses a dictionary
-                        of the over 200 Latin words, combined with a handful of model sentence more as structures, to
-                        generate Lorem Ipsum which looks reasonable.
+                    En un mundo donde el bienestar y la salud son prioridades fundamentales, nuestro servicio se destaca como tu aliado definitivo para alcanzar un estilo de vida más equilibrado. Diseñada meticulosamente para satisfacer tus necesidades individuales, proporcionamos herramientas poderosas que te ayudarán a cultivar hábitos saludables y mejorar tu nutrición.
                     </p>
                     <div>
                         <button
@@ -155,21 +150,15 @@ export const BodyTemporal = () => {
                 </div>
                 <div className='w-full lg:w-1/2 py-4 lg:py-24 px-4 lg:pr-24 flex flex-col gap-4'>
                     <span className='text-[#e97613]'>Nuestros servicios</span>
-                    <SubTitle>Lorem Ipsum Dolor</SubTitle>
+                    <SubTitle>Expertos a tu alcance: Apoyo personalizado en cada paso</SubTitle>
                     <p className='text-balance leading-7 md:leading-10'>
-                        Grursus mal suada faci lisis Lorem ipsum dolarorit mor ametion consectetur elit. Vesti at bulum
-                        nec odio aea the dumm ipsumm ipsum that dolocons is rsus mal suada and fadolorit to the
-                        consectetur elit.
+                        En nuestra plataforma, no solo te proporcionamos herramientas para mejorar tus hábitos y salud alimenticia, sino que también te conectamos directamente con un equipo de especialistas dedicados a ayudarte en tu viaje hacia el bienestar. Con la facilidad de un clic, puedes acceder a asesoramiento experto, orientación personalizada y apoyo continuo de profesionales altamente calificados.
                     </p>
                     <ul className='list-disc ml-8'>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
+                        <li>Nutricionistas certificados</li>
+                        <li>Entrenadores personales</li>
+                        <li>Psicólogos especializados en comportamiento alimenticio</li>
+                        <li>Estrategias generadas con inteligencia artificial</li>
                     </ul>
                 </div>
             </div>
